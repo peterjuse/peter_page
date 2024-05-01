@@ -26,7 +26,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run proyect
         run: |
-          cd ~/peter_page
           workon peter_page
           pip install -r requirements.txt
           python app.py
