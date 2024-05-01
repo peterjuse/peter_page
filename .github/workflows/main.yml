@@ -24,8 +24,9 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Run proyect
         run: |
-          echo Hola mundo!
-          ls
+          cd ~/peter_page
+          workon peter_page
+          pip install -r requirements.txt
           python app.py
