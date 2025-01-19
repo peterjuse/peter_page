@@ -27,6 +27,7 @@ LINKS = (
 SOCIAL = (
     ("You can add links in your config file", "#"),
     ("Another social link", "#"),
+    ("Instagram", "https://instagram.com/pedro_luis22")
 )
 
 DEFAULT_PAGINATION = 5
