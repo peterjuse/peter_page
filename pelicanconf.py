@@ -1,36 +1,67 @@
-AUTHOR = 'Pedro Luis Boll Lugo'
-SITENAME = 'Peterjuse Bizarre Adventure'
-SITEURL = ""
+AUTHOR = "Pedro Luis Boll Lugo"
+SITENAME = "Peterjuse Bizarre Adventure"
+SITESUBTITLE = "Mi intento de blog personal sobre lo que venga"
+SITEURL = "http://peterjuse.github.io"
+TIMEZONE = "America/Caracas"
 
-PATH = "content"
+# can be useful in development, but set to False when you're ready to publish
+RELATIVE_URLS = True
 
-TIMEZONE = 'America/Caracas'
+GITHUB_URL = "http://github.com/peterjuse/"
+DISQUS_SITENAME = "peterjuse-blog"
+REVERSE_CATEGORY_ORDER = True
+LOCALE = "C"
+DEFAULT_PAGINATION = 4
+DEFAULT_DATE = (2025, 1, 19, 12, 0, 0)
 
-DEFAULT_LANG = 'es'
+FEED_ALL_RSS = "feeds/all.rss.xml"
+CATEGORY_FEED_RSS = "feeds/{slug}.rss.xml"
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-# Blogroll
 LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+    ("Gentecnologico", "http://gentecnologico.wordpress.com"),
 )
 
-# Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
-    ("Instagram", "https://instagram.com/pedro_luis22")
+    ("X", "http://x.com/pedro_luis22"),
+    ("Instagram", "https://instagram.com/pedro_luis22"),
+    ("github", "http://github.com/peterjuse"),
 )
 
-DEFAULT_PAGINATION = 5
+# global metadata to all the contents
+DEFAULT_METADATA = {"yeah": "it is"}
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+# path-specific metadata
+EXTRA_PATH_METADATA = {
+    "extra/robots.txt": {"path": "robots.txt"},
+}
+
+# static paths will be copied without parsing their contents
+STATIC_PATHS = [
+    "images",
+    "extra/robots.txt",
+]
+
+# custom page generated with a jinja2 template
+TEMPLATE_PAGES = {"pages/jinja2_template.html": "jinja2_template.html"}
+
+# there is no other HTML content
+READERS = {"html": None}
+
+# code blocks with line numbers
+PYGMENTS_RST_OPTIONS = {"linenos": "table"}
+
+# foobar will not be used, because it's not in caps. All configuration keys
+# have to be in caps
+foobar = "barbaz"
+
+#Custom Home page
+DIRECT_TEMPLATES = (('index', 'blog', 'tags', 'categories', 'archives'))
+PAGINATED_TEMPLATES = (('blog',))
+TEMPLATE_PAGES = {'home.html': 'index.html',}
+
+THEME = 'themes/bootstrap2'
+OUTPUT_PATH = 'output'
+PATH = 'content'
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
