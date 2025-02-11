@@ -1,0 +1,15 @@
+baseURL = 'http://peterjuse.github.io/peter_page/'
+languageCode = 'en-us'
+title = 'Peterjuse 127.0.0.1'
+theme = 'hyde'
+
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/peterjuse/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/pedroBoll/"}
+  ]
+
+[params]
+  description = "Las bizarras aventuras de Pedro"
+  themeColor = "theme-base-09"
+  layoutReverse = true

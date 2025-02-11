@@ -1,0 +1,12 @@
+[submodule "themes/binario"]
+	path = themes/binario
+	url = https://github.com/vimux/binario
+[submodule "themes/enchanted-lowkey"]
+	path = themes/enchanted-lowkey
+	url = https://github.com/nixentric/Lowkey-Hugo-Theme.git
+[submodule "hyde"]
+	path = hyde
+	url = https://github.com/spf13/hyde.git
+[submodule "themes/hyde"]
+	path = themes/hyde
+	url = https://github.com/spf13/hyde.git
