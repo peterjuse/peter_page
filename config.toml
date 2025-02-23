@@ -1,15 +1,25 @@
 baseURL = 'http://peterjuse.github.io/peter_page/'
-languageCode = 'en-us'
+languageCode = 'es-Es'
 title = 'Peterjuse 127.0.0.1'
-theme = 'hyde'
+theme = 'triple-hyde'
 
 [Menus]
   main = [
-      {Name = "Github", URL = "https://github.com/peterjuse/"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/pedroBoll/"}
+      {Name = 'Home', URL = 'http://peterjuse.github.io/peter_page/'}
   ]
 
 [params]
-  description = "Las bizarras aventuras de Pedro"
-  themeColor = "theme-base-09"
+  description = 'Las bizarras aventuras de Pedro'
+  themeColor = 'theme-base-1c'
   layoutReverse = true
+  mainSections = ['posts']
+
+[params.social]
+  email = 'pedro.boll22@gmail.com'
+  facebook = 'pedro_luis22'
+  gravatar = 'pedro.boll22@gmail.com'
+  github = 'peterjuse'
+  instagram = 'pedro_luis22'
+  linkedin = 'pedroBoll'
+  reddit = 'peterjuse'
+  twitter = 'pedro_luis22'
