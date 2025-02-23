@@ -1,4 +1,4 @@
----
++++
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
@@ -8,4 +8,4 @@ layout: post
 type:  "post"
 highlight: false
 draft: true
----
++++s
