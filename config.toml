@@ -1,0 +1,4 @@
+baseURL = 'http://peterjuse.github.io/peter_page'
+languageCode = 'es-Ve'
+title = 'Mi nuevo blog en HUGO'
+theme = 'poison'
