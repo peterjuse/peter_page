@@ -1,4 +1,5 @@
-baseURL = "/peter_page/"
+baseURL = "/"
+relativeURLs = true
 languageCode = "es-ve"
 theme = "poison"
 paginate = 5
