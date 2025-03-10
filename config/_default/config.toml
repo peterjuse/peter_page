@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://peterjuse.github.io"
 relativeURLs = false
 languageCode = "es-ve"
 theme = "poison"
