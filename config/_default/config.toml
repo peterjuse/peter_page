@@ -1,4 +1,4 @@
-baseURL = "https://peterjuse.github.io/peter_page"
+baseURL = "https://peterjuse.github.io/peter_page/"
 relativeURLs = false
 languageCode = "es-ve"
 theme = "poison"
