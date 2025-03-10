@@ -1,5 +1,5 @@
 baseURL = "https://peterjuse.github.io/peter_page"
-relativeURLs = true
+relativeURLs = false
 languageCode = "es-ve"
 theme = "poison"
 pagination.pagerSize = 5
